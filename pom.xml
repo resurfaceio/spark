@@ -1,15 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>7</version>
-    </parent>
-    <groupId>com.sparkjava</groupId>
+
+    <groupId>io.resurface</groupId>
     <artifactId>spark-core</artifactId>
     <packaging>bundle</packaging>
-    <version>2.9.4-SNAPSHOT</version>
+    <version>2.9.4a</version>
     <name>Spark</name>
     <description>A micro framework for creating web applications in Kotlin and Java 8 with minimal effort</description>
     <url>http://www.sparkjava.com</url>
@@ -20,13 +16,6 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-    <scm>
-        <connection>scm:git:git@github.com:perwendel/spark.git</connection>
-        <developerConnection>scm:git:git@github.com:perwendel/spark.git</developerConnection>
-        <url>scm:git:git@github.com:perwendel/spark.git</url>
-    </scm>
-    <developers>
-    </developers>
 
     <properties>
         <java.version>1.8</java.version>
@@ -127,7 +116,6 @@
     </dependencies>
 
     <build>
-
         <resources>
             <resource>
                 <filtering>false</filtering>
@@ -144,7 +132,6 @@
                 </excludes>
             </resource>
         </resources>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -202,4 +189,45 @@
             </plugin>
         </plugins>
     </build>
+
+    <developers>
+        <developer>
+            <id>RobDickinson</id>
+            <name>Rob Dickinson</name>
+            <url>https://github.com/RobDickinson</url>
+            <organization>resurface.io</organization>
+            <organizationUrl>https://resurface.io</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>America/Denver</timezone>
+            <properties>
+                <picUrl>https://resurface.io/headshot_rob_128.jpg</picUrl>
+            </properties>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>cloudsmith</id>
+            <url>https://maven.cloudsmith.io/resurfacelabs/internal/</url>
+        </snapshotRepository>
+        <repository>
+            <id>cloudsmith</id>
+            <url>https://maven.cloudsmith.io/resurfacelabs/internal/</url>
+        </repository>
+    </distributionManagement>
+
+    <organization>
+        <name>resurface.io</name>
+        <url>https://resurface.io</url>
+    </organization>
+
+    <scm>
+        <connection>scm:git:git@github.com:resurfaceio/spark.git</connection>
+        <developerConnection>scm:git:git@github.com:resurfaceio/spark.git</developerConnection>
+        <url>scm:git:git@github.com:resurfaceio/spark.git</url>
+    </scm>
+
 </project>
