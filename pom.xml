@@ -5,7 +5,7 @@
     <groupId>io.resurface</groupId>
     <artifactId>spark-core</artifactId>
     <packaging>bundle</packaging>
-    <version>2.9.4c</version>
+    <version>2.9.4d</version>
     <name>Spark</name>
     <description>A micro framework for creating web applications in Kotlin and Java 8 with minimal effort</description>
     <url>http://www.sparkjava.com</url>
@@ -209,13 +209,9 @@
     </developers>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>cloudsmith</id>
-            <url>https://maven.cloudsmith.io/resurfacelabs/internal/</url>
-        </snapshotRepository>
         <repository>
             <id>cloudsmith</id>
-            <url>https://maven.cloudsmith.io/resurfacelabs/internal/</url>
+            <url>https://maven.cloudsmith.io/resurfacelabs/public/</url>
         </repository>
     </distributionManagement>
 
